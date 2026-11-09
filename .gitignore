@@ -1,0 +1,12 @@
+# Contraseñas de la base de datos y del mail
+api/lib/config.php
+.env
+
+# Archivos de sistema y de trabajo
+*.log
+.DS_Store
+Thumbs.db
+
+# Comprimidos
+*.zip
+*.rar
