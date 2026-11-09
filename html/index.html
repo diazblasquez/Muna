@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/categories-menu.css">
+    <link rel="stylesheet" href="../css/products-menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cart/cart.css">
+    <link rel="icon" href="../image/favicon.png" type="image/png">
+    <script src="../js/includes.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/paths.js"></script>
+    <script src="../js/api.js"></script>
+
+    <!-- Carga de fuentes y librerías de íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">    
+
+    <!--font Onest-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Muna</title>  
+</head>
+<body class="home-page">
+    <div id="nav-placeholder"></div>
+    <main>
+        <section>
+            <div class="home-container">
+                <img class="home" src="../image/fondo head.jpeg" alt="Fondo Alfajores">
+            </div>
+            <div class="overlay">
+                <h1>Müna</h1>
+                <p>Pastelería 100% Artesanal</p>
+            </div>
+
+        </section>
+            
+            <section class="categories" id="inicio">
+                <div class="reveal-left">
+                    <a href="categories/categorie-alfajores.html">
+                        <div class="overlay--categories">
+                        <img class="img-categories" src="../image/categories/alfajores.jpeg" alt="alfajores">
+                        <p class="title--categories">Alfajores</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="reveal-right">
+                    <a href="categories/categorie-tortas.html">
+                        <div class="overlay--categories">
+                        <img class="img-categories" src="../image/categories/tortas.jpg" alt="brownie">
+                        <p class="title--categories">Tortas</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="reveal-left">
+                    <a href="categories/categorie-box.html">
+                        <div class="overlay--categories">
+                        <img class="img-categories" src="../image/categories/box.jpg" alt="alfajores">
+                        <p class="title--categories">Boxes</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="reveal-right">
+                    <a href="categories/categorie-otros.html">
+                        <div class="overlay--categories">
+                        <img class="img-categories" src="../image/categories/otros.jpg" alt="cookie">
+                        <p class="title--categories">Otros</p>
+                        </div> 
+                    </a>
+                </div>
+                
+            </section>
+
+            <h2>Todos los Productos</h2>
+            <section id="productos"> 
+                <a href="product-detail/product-detail--marplatense.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Alfajores/Marplatense.webp" alt="alfajor marplatense">
+                    <p class="product--name">Alfajor Marplatense</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--marplatense-blanco.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Alfajores/Marplatense-blanco.webp" alt="alfajor marplatense blanco">
+                    <p class="product--name">Alfajor Marplatense Blanco</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--keto.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Alfajores/keto.jpeg" alt="alfajor keto">
+                    <p class="product--name">Alfajor Keto</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--lemon-pie.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Tortas/lemon-pie.jpg" alt="torta lemon pie">
+                    <p class="product--name">Lemon Pie</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--brownie.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Tortas/Torta-brownie.webp" alt="torta brownie">
+                    <p class="product--name">Brownie</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--box-aurora.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Boxs/box-aurora.webp" alt="box aurora">
+                    <p class="product--name">Box Aurora</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--box-suspiro.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Boxs/box-suspiro.jpg" alt="box suspiro">
+                    <p class="product--name">Box Suspiro</p>
+                </div>
+                </a>
+                <a href="product-detail/product-detail--cookies.html">
+                    <div class="products--container">
+                    <img class="img-products" src="../image/Productos/Otros/cookies.jpg" alt="cookies">
+                    <p class="product--name">Cookies</p>
+                </div>
+                </a>     
+            </section>
+
+            <!-- Botón del Carrito Flotante -->
+            <div class="floating-cart" id="floating-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </div>
+
+            <!-- Columna Lateral Derecha Desplegable -->
+            <div class="cart-sidebar" id="cart-sidebar">
+                <div class="cart-sidebar-header">
+                    <h3>Mi Carrito</h3>
+                    <button class="close-cart" id="close-cart">&times;</button>
+                </div>
+                
+                <!-- Contenedor de productos dinámicos -->
+                <div class="cart-sidebar-items" id="cart-sidebar-items"></div>
+                
+                <div class="cart-sidebar-footer">
+                    <div class="cart-total-box">
+                        <span>Total:</span>
+                        <span id="cart-sidebar-total">$0</span>
+                    </div>
+                    <button class="btn-checkout">Finalizar Compra</button>
+            </div>
+</div>
+</main>
+<div id="footer-placeholder"></div>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
