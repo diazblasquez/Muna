@@ -12,8 +12,7 @@
     padding:0;
     box-sizing: border-box;;
     font-size: 16px;
-    font-family: Onest;
-   
+    font-family: Onest; 
 }
 
 body{
@@ -29,4 +28,15 @@ header {
     width: 100%;
     z-index: 100;
     background-color: transparent;
+}
+
+/* 1. Ocultar cualquier elemento que sobresalga horizontalmente (sidebars, animaciones) */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* 2. Obligar al navegador a incluir el padding y los bordes dentro del ancho declarado (ej: width: 100%) */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
