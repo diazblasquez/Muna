@@ -1,0 +1,32 @@
+
+/*font onest*/
+@font-face {
+    font-family: Onest;
+    src: url(../fonts/Onest/static/Onest-Bold.ttf) format("truetype");
+    src: url(../fonts/Onest/static/Onest-Black.ttf) format("truetype");
+    src: url(../fonts/Onest/static/Onest-Regular.ttf) format("truetype");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;;
+    font-size: 16px;
+    font-family: Onest;
+   
+}
+
+body{
+    color: #f4f4f4;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+}

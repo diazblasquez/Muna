@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/auth/auth.css">
+    <link rel="icon" href="../../image/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Muna | Crear cuenta</title>
+    <script src="../../js/paths.js"></script>
+</head>
+<body class="auth-page">
+
+    <a href="../index.html" class="auth-top-logo">MÜNA</a>
+
+    <main class="auth-card">
+        <h1>Crear cuenta</h1>
+
+        <p class="auth-error" id="register-error" hidden></p>
+
+        <form id="register-form" novalidate>
+            <div class="auth-grid-2">
+                <div class="auth-field">
+                    <label for="reg-nombre">Nombre <span class="required">*</span></label>
+                    <input type="text" id="reg-nombre" name="nombre" required autocomplete="given-name">
+                </div>
+                <div class="auth-field">
+                    <label for="reg-apellido">Apellido <span class="required">*</span></label>
+                    <input type="text" id="reg-apellido" name="apellido" required autocomplete="family-name">
+                </div>
+            </div>
+
+            <div class="auth-field">
+                <label for="reg-email">Correo electrónico <span class="required">*</span></label>
+                <input type="email" id="reg-email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="auth-field auth-field-password">
+                <label for="reg-password">Contraseña <span class="required">*</span></label>
+                <input type="password" id="reg-password" name="password" required minlength="6" autocomplete="new-password">
+                <button type="button" class="toggle-password" data-target="reg-password" aria-label="Mostrar contraseña">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="auth-field auth-field-password">
+                <label for="reg-password2">Repetir contraseña <span class="required">*</span></label>
+                <input type="password" id="reg-password2" name="password2" required minlength="6" autocomplete="new-password">
+                <button type="button" class="toggle-password" data-target="reg-password2" aria-label="Mostrar contraseña">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </button>
+            </div>
+
+            <button type="submit" class="auth-submit">Crear cuenta</button>
+        </form>
+
+        <div class="auth-links">
+            <p><span class="auth-muted">¿Ya tenés cuenta?</span> <a href="login.html">Iniciar sesión</a></p>
+        </div>
+    </main>
+
+    <script src="../../js/auth.js"></script>
+    <script src="../../js/password-toggle.js"></script>
+    <script src="../../js/register.js"></script>
+</body>
+</html>

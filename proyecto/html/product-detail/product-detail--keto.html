@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/product-detail.css">
+    <link rel="stylesheet" href="../../css/cart/cart.css">
+    
+    <link rel="icon" href="../../image/favicon.png" type="image/png">
+    
+    <!-- Carga de fuentes y librerías de íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
+
+    <!--font Onest-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <title>Muna</title>
+    <script src="../../js/paths.js"></script>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main>
+        <div class="product-detail">
+            <img class="product" src="../../image/Productos/Alfajores/keto.jpeg" alt="alfajor marplatense">
+
+            <div class="product-info">
+                <h2>Alfajor Keto</h2>
+                <p>Alfajor keto elaborado con ingredientes bajos en carbohidratos, compuesto por tapas suaves a base de harinas alternativas y relleno cremoso sin azúcar añadida. Endulzado con edulcorantes aptos para dieta cetogénica, ofrece una opción equilibrada que mantiene la textura y el sabor característico del alfajor tradicional, adaptado a un estilo de alimentación low carb.</p>
+                <p class="price">$40.000</p>
+                <p class="title-input">Cantidad</p>
+                <select name="unidades" class="cantidad">
+                    <option value="option1">6u</option>
+                    <option value="option2">12u</option>
+                    <option value="option2">24u</option>
+                </select>
+                <button class="carrito">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <section>
+            <!-- Botón del Carrito Flotante -->
+            <div class="floating-cart" id="floating-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </div>
+
+            <!-- Columna Lateral Derecha Desplegable -->
+            <div class="cart-sidebar" id="cart-sidebar">
+                <div class="cart-sidebar-header">
+                    <h3>Mi Carrito</h3>
+                    <button class="close-cart" id="close-cart">&times;</button>
+                </div>
+                
+                <!-- Contenedor de productos dinámicos -->
+                <div class="cart-sidebar-items" id="cart-sidebar-items"></div>
+                
+                <div class="cart-sidebar-footer">
+                    <div class="cart-total-box">
+                        <span>Total:</span>
+                        <span id="cart-sidebar-total">$0</span>
+                    </div>
+                    <button class="btn-checkout">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    
+    <script src="../../js/includes.js"></script>
+    <script src="../../js/cart.js"></script>
+</body>
+</html>
