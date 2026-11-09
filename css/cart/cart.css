@@ -174,7 +174,8 @@
 /* Adaptabilidad Móvil */
 @media (max-width: 450px) {
     .cart-sidebar {
-        width: 100%;
+        /* Usamos la misma medida que tu menú hamburguesa para mantener consistencia */
+        width: min(320px, 85vw); 
         right: -100%;
     }
 }
